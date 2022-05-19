@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Editor from './Components/Editor'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Editor text="He's not the sharpest knife in the drawer"></Editor>
+      <Editor text="The big building was blazing with lights"></Editor>
+      <Editor text="Now you must answer some big questions"></Editor>
+      <Editor text="Get Your Act Together"></Editor>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

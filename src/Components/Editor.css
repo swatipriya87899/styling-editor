@@ -1,0 +1,63 @@
+.editor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.style_box,.text_box{
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px 50px;
+}
+
+.style_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.text_box{
+    width: 500px;
+}
+
+.input_box{
+    width: 50px;
+}
+
+.bold, .italic, .underline, .font_size, .color{
+    cursor: pointer;
+    margin: 0px 8px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px) {
+    .editor{
+        display: block;
+        margin-top: 50px;
+    }
+    .style_box,.text_box{
+        margin: 20px 0px;
+        padding: 10px 20px;
+        width: 98%;
+    }
+
+    .style_box{
+        font-size: 10px;
+    }
+  }
